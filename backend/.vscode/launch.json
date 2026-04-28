@@ -1,0 +1,19 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run Grocery Backend",
+      "type": "python",
+      "request": "launch",
+      "python": "${workspaceFolder}/backend/venv/Scripts/python.exe",
+      "program": "${workspaceFolder}/backend/run.py",
+      "console": "integratedTerminal",
+      "cwd": "${workspaceFolder}/backend",
+      "serverReadyAction": {
+        "action": "openExternally",
+        "pattern": "http://[^:]+:(\\d+)",
+        "uriFormat": "http://localhost:%s"
+      }
+    }
+  ]
+}
